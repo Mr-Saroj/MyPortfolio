@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-surface-variant: #e4e2e5;
+  --color-on-surface: #1b1b1e;
+  --color-tertiary-fixed: #ffddb6;
+  --color-on-tertiary-fixed: #2a1800;
+  --color-outline: #75777e;
+  --color-primary-fixed: #d9e2ff;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #a8ccfe;
+  --color-on-error: #ffffff;
+  --color-surface: #fbf8fb;
+  --color-surface-container: #f0edf0;
+  --color-on-tertiary-fixed-variant: #5c421e;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-high: #eae7ea;
+  --color-on-secondary-fixed-variant: #234873;
+  --color-outline-variant: #c5c6ce;
+  --color-surface-container-low: #f5f3f6;
+  --color-on-secondary-fixed: #001c38;
+  --color-secondary-fixed-dim: #a6c9fb;
+  --color-surface-dim: #dbd9dc;
+  --color-surface-tint: #525e7d;
+  --color-surface-bright: #fbf8fb;
+  --color-inverse-surface: #303033;
+  --color-tertiary-container: #321d00;
+  --color-inverse-on-surface: #f2f0f3;
+  --color-on-primary-fixed-variant: #3a4664;
+  --color-on-surface-variant: #45464d;
+  --color-background: #fbf8fb;
+  --color-error: #ba1a1a;
+  --color-on-primary-fixed: #0d1b36;
+  --color-on-primary: #ffffff;
+  --color-on-background: #1b1b1e;
+  --color-error-container: #ffdad6;
+  --color-on-secondary-container: #325681;
+  --color-primary-container: #14213d;
+  --color-primary: #000a24;
+  --color-tertiary: #130900;
+  --color-on-primary-container: #7c89aa;
+  --color-primary-fixed-dim: #b9c6ea;
+  --color-on-error-container: #93000a;
+  --color-inverse-primary: #b9c6ea;
+  --color-tertiary-fixed-dim: #e7c092;
+  --color-secondary-fixed: #d3e4ff;
+  --color-on-tertiary: #ffffff;
+  --color-secondary: #3d608c;
+  --color-surface-container-highest: #e4e2e5;
+  --color-on-tertiary-container: #a58359;
+
+  /* Border Radius */
+  --radius-DEFAULT: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --spacing-base: 8px;
+  --spacing-grid-gutter: 24px;
+  --spacing-section-gap-mobile: 80px;
+  --spacing-grid-margin: 24px;
+  --spacing-container-max: 1200px;
+  --spacing-section-gap-desktop: 160px;
+
+  /* Font Families */
+  --font-display-lg-mobile: "Manrope", sans-serif;
+  --font-label-md: "Manrope", sans-serif;
+  --font-display-lg: "Manrope", sans-serif;
+  --font-headline-lg: "Manrope", sans-serif;
+  --font-body-lg: "Manrope", sans-serif;
+  --font-body-md: "Manrope", sans-serif;
+  --font-headline-xl: "Manrope", sans-serif;
+
+  /* Typography (Font Sizes, Line Heights, Letter Spacing, Weights) */
+  --text-display-lg-mobile: 40px;
+  --text-display-lg-mobile--line-height: 1.2;
+  --text-display-lg-mobile--letter-spacing: -0.02em;
+  --text-display-lg-mobile--font-weight: 800;
+
+  --text-label-md: 14px;
+  --text-label-md--line-height: 1.4;
+  --text-label-md--letter-spacing: 0.05em;
+  --text-label-md--font-weight: 600;
+
+  --text-display-lg: 72px;
+  --text-display-lg--line-height: 1.1;
+  --text-display-lg--letter-spacing: -0.04em;
+  --text-display-lg--font-weight: 800;
+
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 1.3;
+  --text-headline-lg--font-weight: 700;
+
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 1.6;
+  --text-body-md--font-weight: 400;
+
+  --text-headline-xl: 48px;
+  --text-headline-xl--line-height: 1.2;
+  --text-headline-xl--letter-spacing: -0.02em;
+  --text-headline-xl--font-weight: 700;
+}
+
+/* Custom Component Classes */
+@layer components {
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  }
+  .glass-nav {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  .premium-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 1px solid rgba(61, 96, 140, 0.08);
+  }
+  .premium-card:hover {
+    transform: translateY(-8px);
+  }
+  .geometric-bg {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background: linear-gradient(135deg, #14213d 0%, #3d608c 100%);
+  }
+  .timeline-node {
+    width: 12px;
+    height: 12px;
+    background: #3d608c;
+    border: 3px solid #d3e4ff;
+    transform: rotate(45deg);
+  }
+}
