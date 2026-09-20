@@ -10,7 +10,7 @@ const Contact = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-4 text-white">
               <span className="material-symbols-outlined text-secondary-container">mail</span>
-              <span>hello@sarojaojha.dev</span>
+              <span>sarojaojha09@gmail.com</span>
             </div>
             <div className="flex items-center gap-4 text-white">
               <span className="material-symbols-outlined text-secondary-container">location_on</span>
