@@ -8,6 +8,7 @@ import Experience from './components/Experience';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Education from './components/Education';
 
 const Home = () => {
   const observerRef = useRef(null);
@@ -46,8 +47,9 @@ const Home = () => {
         <About />
         <Skills />
         <Projects />
-        <Experience />
-        <Services />
+        {/* <Experience /> */}
+        {/* <Services /> */}
+        <Education/>
         <Contact />
       </main>
       <Footer />

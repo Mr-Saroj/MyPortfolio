@@ -1,52 +1,75 @@
 import React from 'react';
 
 const Skills = () => {
+  const dev = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons';
+  const simple = 'https://cdn.jsdelivr.net/npm/simple-icons@v13/icons';
+
   const skillCategories = [
     {
       title: 'Backend',
       icon: 'dns',
       skills: [
-        { name: 'Java', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg' },
-        { name: 'Spring Boot', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg' },
+        { name: 'Java', logo: `${dev}/java/java-original.svg` },
+        { name: 'Spring Boot', logo: `${dev}/spring/spring-original.svg` },
+        { name: 'Spring Security', symbol: 'security' },
+        { name: 'Spring Data JPA', symbol: 'storage' },
+        { name: 'Hibernate', logo: `${dev}/hibernate/hibernate-original.svg` },
+        { name: 'REST APIs', symbol: 'api' },
+        { name: 'JWT Auth', symbol: 'key' },
+      ],
+    },
+    {
+      title: 'Distributed Systems',
+      icon: 'hub',
+      skills: [
         { name: 'Microservices', symbol: 'hub' },
+        { name: 'RabbitMQ', logo: `${simple}/rabbitmq.svg` },
+        { name: 'Event-Driven Architecture', symbol: 'sync_alt' },
+        { name: 'Message Queues', symbol: 'mail' },
+        { name: 'System Design', symbol: 'account_tree' },
       ],
     },
     {
       title: 'Frontend',
       icon: 'devices',
       skills: [
-        { name: 'React JS', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg' },
-        { name: 'JavaScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg' },
-        { name: 'TypeScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg' },
-        { name: 'Tailwind CSS', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
-        { name: 'HTML', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' },
-        { name: 'CSS3', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg' },
-        { name: 'Bootstrap', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg' },
+        { name: 'React JS', logo: `${dev}/react/react-original.svg` },
+        { name: 'JavaScript', logo: `${dev}/javascript/javascript-original.svg` },
+        { name: 'TypeScript', logo: `${dev}/typescript/typescript-original.svg` },
+        { name: 'Tailwind CSS', logo: `${dev}/tailwindcss/tailwindcss-original.svg` },
+        { name: 'HTML', logo: `${dev}/html5/html5-original.svg` },
+        { name: 'CSS3', logo: `${dev}/css3/css3-original.svg` },
+        { name: 'Bootstrap', logo: `${dev}/bootstrap/bootstrap-original.svg` },
       ],
     },
     {
       title: 'Database',
       icon: 'database',
       skills: [
-        { name: 'MongoDB', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg' },
-        { name: 'MySQL', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg' },
-        { name: 'SQL Server', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg' },
+        { name: 'PostgreSQL', logo: `${dev}/postgresql/postgresql-original.svg` },
+        { name: 'MySQL', logo: `${dev}/mysql/mysql-original.svg` },
+        { name: 'MongoDB', logo: `${dev}/mongodb/mongodb-original.svg` },
+        { name: 'SQL Server', logo: `${dev}/microsoftsqlserver/microsoftsqlserver-plain.svg` },
       ],
     },
     {
-      title: 'Tools',
+      title: 'DevOps & Tools',
       icon: 'build',
       skills: [
-        { name: 'Git', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg' },
-        { name: 'GitHub', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg' },
-        { name: 'GitHub Copilot', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/githubcopilot.svg' },
+        { name: 'Docker', logo: `${dev}/docker/docker-original.svg` },
+        { name: 'Maven', logo: `${dev}/maven/maven-original.svg` },
+        { name: 'Git', logo: `${dev}/git/git-original.svg` },
+        { name: 'GitHub', logo: `${dev}/github/github-original.svg` },
+        { name: 'Postman', logo: `${dev}/postman/postman-original.svg` },
+        { name: 'GitHub Copilot', logo: `${simple}/githubcopilot.svg` },
       ],
     },
     {
       title: 'Problem Solving',
       icon: 'psychology_alt',
       skills: [
-        { name: 'LeetCode', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/leetcode.svg' },
+        { name: 'Data Structures & Algorithms', symbol: 'account_tree' },
+        { name: 'LeetCode', logo: `${simple}/leetcode.svg` },
       ],
     },
   ];
