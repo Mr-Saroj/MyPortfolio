@@ -1,75 +1,57 @@
-import React from "react";
+import React from 'react';
 
 const Services = () => {
   const services = [
     {
-      icon: "code",
-      title: "React.js Frontend Development",
+      icon: 'code',
+      title: 'React.js Frontend Development',
       description:
-        "Build modern, responsive, and user-friendly web applications using React.js, Tailwind CSS, and the latest frontend best practices for exceptional user experiences.",
-      border: "border-b-secondary",
+        'Build modern, responsive, and user-friendly web applications using React.js, Tailwind CSS, and the latest frontend best practices for exceptional user experiences.',
     },
     {
-      icon: "dns",
-      title: "Spring Boot Backend Development",
+      icon: 'dns',
+      title: 'Spring Boot Backend Development',
       description:
-        "Develop secure, scalable, and high-performance backend applications using Spring Boot, Spring Security, JPA, and RESTful architecture.",
-      border: "border-b-primary",
+        'Develop secure, scalable, and high-performance backend applications using Spring Boot, Spring Security, JPA, and RESTful architecture.',
     },
     {
-      icon: "hub",
-      title: "Microservices & REST APIs",
+      icon: 'hub',
+      title: 'Microservices & REST APIs',
       description:
-        "Design and develop microservices architecture with well-structured REST APIs, enabling scalable, maintainable, and efficient communication between services.",
-      border: "border-b-secondary-fixed-dim",
+        'Design and develop microservices architecture with well-structured REST APIs, enabling scalable, maintainable, and efficient communication between services.',
     },
     {
-      icon: "phone_android",
-      title: "React Native App Development",
+      icon: 'phone_android',
+      title: 'React Native App Development',
       description:
-        "Create responsive and user-friendly Android applications using React Native with clean UI, smooth navigation, and optimized performance.",
-      border: "border-b-secondary",
+        'Create responsive and user-friendly Android applications using React Native with clean UI, smooth navigation, and optimized performance.',
     },
   ];
 
   return (
-    <section className="py-section-gap-desktop px-grid-margin max-w-container-max mx-auto">
+    <section className="neu-surface py-16 md:py-section-gap-desktop px-6 sm:px-8 md:px-grid-margin max-w-container-max mx-auto" id="services">
       <div className="space-y-16">
-        {/* Heading */}
         <div className="text-center space-y-4">
-          <span className="text-secondary font-label-md uppercase tracking-widest">
-            Services
-          </span>
-
-          <h2 className="font-headline-xl text-headline-xl text-primary">
+          <span className="text-secondary font-label-md uppercase tracking-widest">Services</span>
+          <h2 className="font-headline-xl text-[26px] sm:text-[30px] md:text-headline-xl text-primary">
             Professional Development Services
           </h2>
-
           <p className="max-w-2xl mx-auto text-on-surface-variant">
-            I build modern web applications, scalable backend systems,
-            microservices, REST APIs, and mobile applications with a strong
-            focus on performance, security, and user experience.
+            I build modern web applications, scalable backend systems, microservices, REST APIs, and mobile applications with a strong focus on performance, security, and user experience.
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
-          {services.map((service, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 md:gap-10">
+          {services.map((service) => (
             <div
-              key={index}
-              className={`premium-card p-8 lg:p-10 rounded-2xl space-y-6 border-b-4 ${service.border} hover:-translate-y-2 transition-all duration-300`}
+              key={service.title}
+              className="neu-raised p-8 lg:p-10 space-y-6 transition-all duration-300 hover:-translate-y-2"
             >
-              <span className="material-symbols-outlined text-secondary text-5xl">
-                {service.icon}
-              </span>
-
-              <h3 className="font-headline-lg text-primary">
-                {service.title}
-              </h3>
-
-              <p className="text-on-surface-variant leading-7">
-                {service.description}
-              </p>
+              <div className="neu-inset w-20 h-20 rounded-2xl flex items-center justify-center">
+                <span className="material-symbols-outlined text-secondary text-5xl">{service.icon}</span>
+              </div>
+              <h3 className="font-headline-lg text-primary">{service.title}</h3>
+              <p className="text-on-surface-variant leading-7">{service.description}</p>
             </div>
           ))}
         </div>

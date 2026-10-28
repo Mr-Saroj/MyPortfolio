@@ -52,22 +52,25 @@ const Skills = () => {
   ];
 
   return (
-    <section className="py-section-gap-desktop bg-surface-container-low px-grid-margin" id="skills">
+    <section className="neu-surface py-16 md:py-section-gap-desktop px-6 sm:px-8 md:px-grid-margin" id="skills">
       <div className="max-w-container-max mx-auto space-y-12">
         <div className="text-center space-y-4">
           <span className="text-secondary font-label-md uppercase tracking-widest">Expertise</span>
-          <h2 className="font-headline-xl text-headline-xl text-primary">Technical Arsenal</h2>
+          <h2 className="font-headline-xl text-[26px] sm:text-[30px] md:text-headline-xl text-primary">Technical Arsenal</h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {skillCategories.map((category) => (
-            <div key={category.title} className="premium-card p-8 space-y-6">
-              <span className="material-symbols-outlined text-secondary text-4xl">{category.icon}</span>
+            <div key={category.title} className="neu-raised p-8 space-y-6">
+              <div className="neu-inset w-16 h-16 rounded-2xl flex items-center justify-center">
+                <span className="material-symbols-outlined text-secondary text-4xl">{category.icon}</span>
+              </div>
               <h3 className="font-headline-lg text-[24px] text-primary">{category.title}</h3>
               <div className="flex flex-wrap gap-3">
                 {category.skills.map((skill) => (
                   <span
                     key={skill.name}
-                    className="flex items-center gap-2 px-3 py-2 border border-outline-variant rounded-full text-[12px] font-bold tracking-tighter text-on-surface-variant uppercase"
+                    className="neu-inset-sm flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-tighter text-on-surface-variant uppercase"
                   >
                     {skill.logo ? (
                       <img src={skill.logo} alt={skill.name} className="w-4 h-4 object-contain" />
