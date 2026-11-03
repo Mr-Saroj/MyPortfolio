@@ -36,7 +36,7 @@ const Projects = () => {
       description:
         'Krishi Sathi AI is an AI-powered agricultural platform designed to help farmers make smarter farming decisions. It features AI-based plant disease detection that identifies common crop diseases from leaf images and an intelligent farming advisor that provides guidance on crop management, disease prevention, and farming operations using AI and a Retrieval-Augmented Generation (RAG) system. The platform also includes an agricultural marketplace where farmers can explore and purchase farming products from registered sellers. Sellers can manage their products and orders, while administrators manage users, approve sellers and products, monitor marketplace operations, and assign delivery partners to orders. A dedicated delivery workflow supports order fulfillment from sellers to farmers.',
 
-      image: '/Images/KrishiSathiAI.png',
+      image: '/Images/krishisathiai.png',
 
       tech: [
         'React Native',
@@ -115,9 +115,9 @@ const Projects = () => {
                 project.reverse ? 'order-1 md:order-2' : ''
               }`}
             >
-              <div className="neu-inset !rounded-2xl p-2 h-[220px] sm:h-[300px] md:h-[400px]">
+              <div className="neu-inset !rounded-2xl p-2 flex items-center justify-center overflow-hidden">
                 <img
-                  className="w-full h-full object-cover rounded-xl"
+                  className="w-full h-auto max-h-[260px] sm:max-h-[340px] md:max-h-[420px] object-contain rounded-xl"
                   alt={`${project.name} project preview`}
                   src={project.image}
                   loading="lazy"
